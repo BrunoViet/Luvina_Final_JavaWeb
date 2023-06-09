@@ -165,7 +165,7 @@
                                 <button class="btn btn-warning" [routerLink]="['/update',phone.id]">Sửa</button>
                                 <button (click)="deleteForm(phone)" data-bs-toggle="modal"
                                     data-bs-target="#exampleModal" class="btn btn-danger">Xóa</button>
-                                <button routerLink="/order" class="btn btn-success">Thêm vào giỏ
+                                <button [routerLink]="['/order',phone.id]" class="btn btn-success">Thêm vào giỏ
                                     hàng</button>
                             </div>
                         </div>

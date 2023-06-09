@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
-import { Order } from 'src/model/order/Order';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -14,7 +13,7 @@ export class OrderService {
     return this.http.get<Object[]>(this.API_URL + '/orders');
   }
 
-  saveOrder(order: Order, id: number): Observable<void> {
-    return this.http.post<void>(this.API_URL + '/addorder' + id, order)
+  saveOrder(id: number): Observable<void> {
+    return this.http.post<void>(this.API_URL + '/addorder' , id)
   }
 }

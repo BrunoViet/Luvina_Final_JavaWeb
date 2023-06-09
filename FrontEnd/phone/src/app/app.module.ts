@@ -11,6 +11,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { EditPhoneComponent } from '../phone/edit-phone/edit-phone.component';
 import { DetailPhoneComponent } from '../phone/detail-phone/detail-phone.component';
 import { OrderComponent } from './order/order.component';
+import { OrderDetailComponent } from './order/order-detail/order-detail.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { OrderComponent } from './order/order.component';
     EditPhoneComponent,
     DetailPhoneComponent,
     OrderComponent,
+    OrderDetailComponent,
   ],
   imports: [
     BrowserModule,

@@ -23,6 +23,7 @@ export class DetailPhoneComponent {
       this.idPhone = Number(param.get('id'));
       this.phoneService.getPhoneById(this.idPhone).subscribe((data) => {
         this.phoneDetail = data;
+        console.log(this.phoneDetail);
       })
     }
     )

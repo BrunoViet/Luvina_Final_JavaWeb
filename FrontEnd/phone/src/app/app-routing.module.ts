@@ -5,6 +5,7 @@ import { PhoneCreateComponent } from '../phone/create-phone/create-phone.compone
 import { EditPhoneComponent } from 'src/phone/edit-phone/edit-phone.component';
 import { DetailPhoneComponent } from 'src/phone/detail-phone/detail-phone.component';
 import { OrderComponent } from './order/order.component';
+import { OrderDetailComponent } from './order/order-detail/order-detail.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,8 @@ const routes: Routes = [
   { path: 'create', component: PhoneCreateComponent },
   { path: 'update/:id', component: EditPhoneComponent },
   { path: 'order', component: OrderComponent },
+  { path: 'order/:id', component: OrderDetailComponent },
+
 ];
 
 @NgModule({
